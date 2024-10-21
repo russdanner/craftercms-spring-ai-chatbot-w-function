@@ -1,0 +1,19 @@
+version: "1.0"
+plugins:
+- id: "org.craftercms.openai"
+  version:
+    major: 1
+    minor: 0
+    patch: 7
+  type: "site"
+  pluginUrl: "https://github.com/craftercms/chatgpt-plugin"
+  installationDate: "2024-10-18T03:15:07.861062802Z"
+  files:
+  - path: "config/studio/scripts/rest/plugins/org/craftercms/openai/v1/chat/completions.post.groovy"
+  - path: "config/studio/scripts/rest/plugins/org/craftercms/openai/key.get.groovy"
+  - path: "config/studio/static-assets/plugins/org/craftercms/openai/components/index.js"
+  - path: "config/studio/static-assets/plugins/org/craftercms/openai/tinymce/tinymce-icon-pack.js"
+  - path: "config/studio/static-assets/plugins/org/craftercms/openai/tinymce/craftercms_openai.js"
+  config:
+  - type: "preview-app"
+    elementXpath: "//widget[@id='craftercms.components.openai.Helper']"
